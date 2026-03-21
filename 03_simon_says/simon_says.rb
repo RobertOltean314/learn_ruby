@@ -7,7 +7,7 @@ def shout(msg)
 end
 
 def repeat(msg, times = 2)
-  ([msg] * times).join(" ")
+  ([msg] * times).join(' ')
 end
 
 def start_of_word(word, characters = 1)
@@ -16,12 +16,15 @@ end
 
 def first_word(words)
   # should return everything until the first " "
-  word = ""
-  words.each_char do |char|
-    break if char == " "
-    word += char
-  end
-  word
+  # word = ''
+  # words.each_char do |char|
+  #   break if char == ' '
+
+  #   word += char
+  # end
+  # word
+  # this entire thing can be written as:
+  words.split.first
 end
 
 def titleize(phrase)
@@ -37,5 +40,5 @@ def titleize(phrase)
     end
   end
 
-  capitalized.join(" ")
+  capitalized.join(' ')
 end
