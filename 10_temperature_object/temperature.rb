@@ -40,3 +40,15 @@ class Temperature
   end
 
 end
+
+class Celsius < Temperature
+  def initialize(degrees)
+    super(c: degrees) # if we don't specifically pass a parameter, Ruby won't know what type to convert this into
+  end
+end
+
+class Fahrenheit < Temperature
+  def initialize(degrees)
+    super(f: degrees)
+  end
+end

@@ -99,31 +99,29 @@ describe Temperature do
   describe "utility class methods" do
 
   end
-  # Haven't implemented it this way. I'm commenting this for the moment to all the tests passes
-  #
   # Here's another way to solve the problem
-  # describe "Temperature subclasses" do
-  #   describe "Celsius subclass" do
-  #     it "is constructed in degrees celsius" do
-  #       Celsius.new(50).in_celsius.should == 50
-  #       Celsius.new(50).in_fahrenheit.should == 122
-  #     end
-  #
-  #     it "is a Temperature subclass" do
-  #       Celsius.new(0).should be_a(Temperature)
-  #     end
-  #   end
-  #
-  #   describe "Fahrenheit subclass" do
-  #     it "is constructed in degrees fahrenheit" do
-  #       Fahrenheit.new(50).in_fahrenheit.should == 50
-  #       Fahrenheit.new(50).in_celsius.should == 10
-  #     end
-  #
-  #     it "is a Temperature subclass" do
-  #       Fahrenheit.new(0).should be_a(Temperature)
-  #     end
-  #   end
-  # end
+  describe "Temperature subclasses" do
+    describe "Celsius subclass" do
+      it "is constructed in degrees celsius" do
+        Celsius.new(50).in_celsius.should == 50
+        Celsius.new(50).in_fahrenheit.should == 122
+      end
+
+      it "is a Temperature subclass" do
+        Celsius.new(0).should be_a(Temperature)
+      end
+    end
+
+    describe "Fahrenheit subclass" do
+      it "is constructed in degrees fahrenheit" do
+        Fahrenheit.new(50).in_fahrenheit.should == 50
+        Fahrenheit.new(50).in_celsius.should == 10
+      end
+
+      it "is a Temperature subclass" do
+        Fahrenheit.new(0).should be_a(Temperature)
+      end
+    end
+  end
 
 end
