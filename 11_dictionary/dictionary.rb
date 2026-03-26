@@ -1,5 +1,5 @@
 class Dictionary
-  attr_accessor :entries
+  attr_reader :entries
 
   def initialize(entries = {})
     @entries = entries
