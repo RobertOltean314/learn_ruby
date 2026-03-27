@@ -15,7 +15,7 @@
 require 'book'
 
 describe Book do
-
+  # 'specify', 'it' and 'example' -> interchangeable, use whatever fits the context
   before do
     @book = Book.new
   end
