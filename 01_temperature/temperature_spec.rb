@@ -55,7 +55,8 @@ describe "temperature conversion functions" do
 
     it "converts body temperature" do
       ctof(37).should be_within(0.1).of(98.6)
-      # Why do we need to use be_within?
+      # Why do we need to use be_within? - We have to use it because of how floating point numbers work in computers.
+      # 1-0.9 Might be displayed as 0.1 but behind the scenes is 0.099999 not 0.1
       # See http://www.ruby-forum.com/topic/169330
       # and http://en.wikipedia.org/wiki/IEEE_754-2008
       # and http://en.wikipedia.org/wiki/Double_precision_floating-point_format
