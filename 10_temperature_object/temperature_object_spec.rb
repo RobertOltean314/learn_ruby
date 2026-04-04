@@ -99,8 +99,7 @@ describe Temperature do
   describe "utility class methods" do
 
   end
-
-  # Here's another way to solve the problem!
+  # Here's another way to solve the problem
   describe "Temperature subclasses" do
     describe "Celsius subclass" do
       it "is constructed in degrees celsius" do
